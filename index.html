@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Game Start!</title>
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+  <h1>Random Number Game</h1>
+  <h2>Generate a number between 10 and 100</h2>
+  <div class="controls">
+    <input type="range" list="tickmarks" id="jsRange" min="10" max="200" value="10" step="5" />
+    <datalist id="tickmarks">
+      <option value="50"></option>
+      <option value="100"></option>
+      <option value="150"></option>
+      <option value="200"></option>
+    </datalist>
+  </div>
+  <form class="guess_num">
+    <label for="num"> Guess the number: </label>
+    <input type="number" id="num"/> <button type="button">play!</button>
+  </form>
+  <div class="show_num"> </div>
+  <h3> </h3>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
